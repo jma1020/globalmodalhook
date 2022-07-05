@@ -16,7 +16,6 @@ const ModalPage = () => {
     <div>
       <ModalComponent isModal={isModal} close={close}>
         <ModalComponent.Title>포스트 미리보기</ModalComponent.Title>
-        <ModalComponent.Input></ModalComponent.Input>
         <ModalComponent.Summary>상세 내용</ModalComponent.Summary>
         <ModalComponent.Thumbnail state={img} setState={setImg} />
         <ModalComponent.Button closeText="닫기" close={close} />
@@ -27,6 +26,19 @@ const ModalPage = () => {
           onClick={btnClick}
         />
       </ModalComponent>
+
+      {/* <ModalComponent 
+        isModal={isModal} 
+        close={close} 
+        tit='' 
+        sum='', 
+        onClick={btnClick}
+        closeText='닫'
+        actionText='열'
+        state={img}
+        setState={setImg}
+      /> */}
+
       <button onClick={() => open()}>클릭미</button>
       <button onClick={() => close()}>닫힌다</button>
     </div>

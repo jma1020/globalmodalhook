@@ -4,9 +4,9 @@ export const Background = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   z-index: 100;
-  width: 100vw;
-  height: 100vh;
   background-color: #555;
 `;
 
@@ -24,5 +24,5 @@ export const ModalBox = styled.div`
 export const ExitButton = styled.button`
   position: absolute;
   top: 1rem;
-  left: 1rem;
+  right: 1rem;
 `;
